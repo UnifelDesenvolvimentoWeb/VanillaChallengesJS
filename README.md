@@ -91,14 +91,14 @@ do projeto</strong></summary><br />
 
 </details>
 
-## 1 - Implemente a função printsElements
+## 1 - Implemente a função printElements
 
 <details>
   <summary>
-    Implemente a função <code>printsElements</code> escreva um código que imprima todos os elementos de um array.
+    Implemente a função <code>printElements</code> escreva um código que imprima todos os elementos de um array.
   </summary> <br />
 
-A função `printsElements` recebe um arrray por parâmetro e imprime um por um dos elementos do aray:
+A função `printElements` recebe um arrray por parâmetro e imprime um por um dos elementos do aray:
 
 </details>
 
