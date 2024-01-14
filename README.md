@@ -3,18 +3,57 @@
 # Orientações
 
 <details>
-  <summary><strong>‼️ Antes de começar a desenvolver</strong></summary><br />
+<summary><strong>‼ Antes de começar a desenvolver</strong></summary><br />
 
-  1. Clone o repositório
+1. Clone o repositório
 
-  - Use o comando: `git@github.com:MarcleyRosa/challengeMasterJS.git`
-  - Entre na pasta do repositório que você acabou de clonar:
-    - `cd challengeMasterJS`
+	*  Use o comando: `git@github.com:UnifelDesenvolvimentoWeb/VanillaChallengesJS.git`
 
-  2. Instale as dependências
+* Entre na pasta do repositório que você acabou de clonar:
 
-  - `npm install`
+	*  `VanillaChallengesJS`
 
+2. Instale as dependências
+
+	* Para isso, use o seguinte comando: `npm install`
+
+3. Crie uma branch a partir da branch `master`
+
+	* Verifique se você está na branch `master`
+	  * Exemplo: `git branch`
+	* Se não estiver, mude para a branch `master`
+	  * Exemplo: `git checkout master`
+	* Agora, crie uma branch para qual você vai submeter os `commits` do seu projeto:
+		* Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
+		* Exemplo: `git checkout -b arthur-alves-vanillaChallenges`
+
+4. Adicione as mudanças ao _stage_ do Git e faça um `commit`
+	* Verifique que as mudanças ainda não estão no _stage_
+	  * Exemplo: `git status` (os arquivos no diretório `src` devem aparecer em vermelho)
+
+	* Adicione o novo arquivo ao _stage_ do Git
+	  * Exemplo: `git add .` (adicionando todas as mudanças - _que estavam em vermelho_ - ao stage do Git)
+	  *  `git status` (deve aparecer listado os arquivos do diretório `src` em verde)
+
+	* Faça o `commit` inicial
+	  * Exemplo: `git commit -m 'iniciando o projeto.'` (fazendo o primeiro commit)
+	*  `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
+
+5. Adicione a sua branch com o novo `commit` ao repositório remoto
+
+	* Usando o exemplo anterior: `git push -u origin arthur-alves-vanillaChallenges`
+
+6. Crie um novo `Pull Request`  _(PR)_
+	* Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/UnifelDesenvolvimentoWeb/VanillaChallengesJS/pulls)
+	* Clique no botão verde _"New pull request"_
+	* Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
+	* Coloque um título para o seu _Pull Request_
+    * Exemplo: _"Cria função x"_
+	* Clique no botão verde _"Create pull request"_
+	* Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
+	*  **Não se preocupe em preencher mais nada por enquanto!**
+	* Volte até a [página de _Pull Requests_ do repositório](https://github.com/UnifelDesenvolvimentoWeb/VanillaChallengesJS/pulls) e confira que o seu _Pull Request_ está criado.
+	
 </details>
 
 <details>
