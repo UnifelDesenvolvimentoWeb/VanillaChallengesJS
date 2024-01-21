@@ -50,9 +50,12 @@ function invertElementsArray(array) {
 // Desafio 5
 //  Escreva um código que recebe uma string por parâmetro e imprima a sua versão invertida.
 function invertString(string) {
-
+  let newString = '';
+  for (let i = (string.length - 1); i >= 0; i -= 1) {
+    newString += string[i]
 }
-
+  return newString
+}
 // Desafio 6
 // Escreva um código que receba um array de números por parâmetro e retorne
 // o array com os elementos duplicados removidos.
