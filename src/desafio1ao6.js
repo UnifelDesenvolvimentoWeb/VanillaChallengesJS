@@ -12,6 +12,7 @@ function printsElements(array) {
 // Escreva um código que encontre o maior elemento de um array.
 function biggerNumber(array) {
   let maiorValor = array[0]
+  
   for(let i = 1; i <array.length; i += 1) {
     if(array[i] > maiorValor) {
       maiorValor = array[i];
@@ -25,6 +26,13 @@ function biggerNumber(array) {
 // Escreva um código que imprima todos os elementos de um array, exceto o primeiro e o último.
 // Caso o array tenha um tamanho menor que 3 imprima a mensagem: 'Tamanho do array inválido'
 function ignoreFirstAndLastElement(array) {
+  if(array.length >= 3) {
+    for (let i = 1; i < (array.length - 1); i += 1) {
+      console.log(array[i])
+    } 
+  } else {
+    console.log('Tamanho do array inválido')
+  }
 
 }
 
