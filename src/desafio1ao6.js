@@ -3,6 +3,7 @@ const arrayProp = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const arrayDupli = [3, 5, 5, 7, 9, 9, 1, 9, 2, 5, 7, 9, 2, 42, 12, 56, 87, 34, 23, 34]
 
 
+
 // Desafio 1
 // Escreva um código que imprima um por um de todos os elementos de um array.
 function printElements(array) {
