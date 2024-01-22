@@ -22,18 +22,31 @@ function biggerNumber(array) {
   console.log(`O maior elemento do array é: ${maiorNum}`);
 }
 biggerNumber(array)
+
 // Desafio 3
 // Escreva um código que imprima todos os elementos de um array, exceto o primeiro e o último.
 // Caso o array tenha um tamanho menor que 3 imprima a mensagem: 'Tamanho do array inválido'
 function ignoreFirstAndLastElement(array) {
+  if (array.length < 3) {
+    console.log('Tamanho do array inválido');
+  } else {
+    array.shift()
+    array.pop()
 
+    console.log(array);
+  }
 }
+ignoreFirstAndLastElement(array)
 
 // Desafio 4
 // Escreva um código que inverta a ordem dos elementos de um array.
 function invertElementsArray(array) {
-
+  for (let index = 1; index < array.length; index ++) {
+    array.reverse()
+  }
+  console.log(array);
 }
+invertElementsArray(array);
 
 // Desafio 5
 //  Escreva um código que recebe uma string por parâmetro e imprima a sua versão invertida.
