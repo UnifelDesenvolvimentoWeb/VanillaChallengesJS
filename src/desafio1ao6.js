@@ -17,8 +17,10 @@ printElements(array)
 // Escreva um código que encontre o maior elemento de um array.
 
 function biggerNumber(array) {
-  maior = Math.max(...array)
-  console.log(maior)
+  maxValue = array.reduce(function(prev, current) {
+    return prev > current ? prev : current
+  }) 
+  console.log(maxValue)
 }
 biggerNumber(array)
 
