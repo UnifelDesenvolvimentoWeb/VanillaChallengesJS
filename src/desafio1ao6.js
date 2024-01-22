@@ -68,6 +68,7 @@ invertString(name)
 // Desafio 6
 // Escreva um código que receba um array de números por parâmetro e retorne
 // o array com os elementos duplicados removidos.
+
 function noDuplicates(arrayDupli) {
   const set = new Set(arrayDupli);
   const arraySemDuplicados = Array.from(set);
