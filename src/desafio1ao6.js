@@ -7,9 +7,9 @@ const arrayDupli = [3, 5, 5, 7, 9, 9, 1, 9, 2, 5, 7, 9, 2, 42, 12, 56, 87, 34, 2
 // Escreva um código que imprima um por um de todos os elementos de um array.
 
 function printElements(array) {
-  array.forEach((number, index) => {
-    console.log('Index: ' + index + ' Value: ' + number)
-  }); 
+  for (let index = 0; index < array.length; index++) {
+    console.log(array[index])
+  } 
 }
 printElements(array)
 
