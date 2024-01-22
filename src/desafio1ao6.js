@@ -11,10 +11,17 @@ printElements(array);
 
 // Desafio 2
 // Escreva um código que encontre o maior elemento de um array.
+let maiorNum = array[0];
+
 function biggerNumber(array) {
-
+  for (let index = 1; index < array.length; index ++) {
+    if (array[index] > maiorNum) {
+      maiorNum = array[index]
+    }
+  }
+  console.log(`O maior elemento do array é: ${maiorNum}`);
 }
-
+biggerNumber(array)
 // Desafio 3
 // Escreva um código que imprima todos os elementos de um array, exceto o primeiro e o último.
 // Caso o array tenha um tamanho menor que 3 imprima a mensagem: 'Tamanho do array inválido'
