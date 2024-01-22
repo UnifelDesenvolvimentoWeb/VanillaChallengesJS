@@ -50,9 +50,12 @@ invertElementsArray(array);
 
 // Desafio 5
 //  Escreva um código que recebe uma string por parâmetro e imprima a sua versão invertida.
+const minhaString = 'Dias';
 function invertString(string) {
-
+  const stringInvertida = string.split('').reverse().join('');
+  console.log(`String invertida: ${stringInvertida}`);
 }
+invertString(minhaString);
 
 // Desafio 6
 // Escreva um código que receba um array de números por parâmetro e retorne
