@@ -16,7 +16,7 @@ function taxesCalcul(grossSalary) {
         let licotaSalarioBrutoB = salarioBrutoDig * inssB
         let novoSalarioBrutoB = salarioBrutoDig - licotaSalarioBrutoB
         if (novoSalarioBrutoB <= 1903.98) {
-            return `O salário Liquido é: R$ ${novoSalarioBrutoB.toFixed(2)}`
+            return `O salário Liquido é: R$ ${novoSalarioBrutoB.toFixed(0)}`
         } else if (novoSalarioBrutoB >= 1903.99 && novoSalarioBrutoB <= 2826.65) {
             let irb = 0.075
             let salarioLiqB = novoSalarioBrutoB * irb
@@ -39,11 +39,23 @@ function taxesCalcul(grossSalary) {
             let salarioLiqC = novoSalarioBrutoC * irc
             let salarioLiqCF = salarioLiqC - 354.80
             let salarioLiquidoFinalC = novoSalarioBrutoC - salarioLiqCF
-            return `O salário liquido é: R$ ${salarioLiquidoFinalC.toFixed(2)}`  
+            return `O salário liquido é: R$ ${salarioLiquidoFinalC.toFixed(1)}`  
         }
     } else if (salarioBrutoDig > 5189.82) {
         let novoSalarioBrutoD = salarioBrutoDig - 570.88
-        return novoSalarioBrutoD.toFixed(2)
+        if (novoSalarioBrutoD >= 3751.06 && novoSalarioBrutoD <= 4664.68) {
+            let ire = 0.225
+            let salarioLiqE = novoSalarioBrutoD * ire
+            let salarioLiqEF = salarioLiqE - 636.13
+            let salarioLiquidoFinalE = novoSalarioBrutoD - salarioLiqEF
+            return `O salário liquido é: R$ ${salarioLiquidoFinalE.toFixed(2)}`
+        } else if (novoSalarioBrutoD > 4664.68) {
+            let irf = 0.275
+            let salarioLiqF = novoSalarioBrutoD * irf
+            let salarioLiqFF = salarioLiqF - 869.36
+            let salarioLiquidoFinalF = novoSalarioBrutoD - salarioLiqFF
+            return `O salário liquido é: R$ ${salarioLiquidoFinalF.toFixed(2)}`
+        } 
     } 
 }
 console.log(taxesCalcul(4200))
