@@ -60,10 +60,16 @@ invertString(minhaString);
 // Desafio 6
 // Escreva um código que receba um array de números por parâmetro e retorne
 // o array com os elementos duplicados removidos.
+const arrayDuplicado = [1, 1, 2, 3, 4, 4]
 function noDuplicates(array) {
-  
+  const setUnico = new Set(array);
+  const unicoArray = Array.from(setUnico);
+  return unicoArray;
 }
+const resultArray = noDuplicates(arrayDuplicado);
+console.log(`Array com os elementos duplicados removidos: ${resultArray}`);
 
+noDuplicates(array)
 module.exports = {
   biggerNumber,
   printElements,
