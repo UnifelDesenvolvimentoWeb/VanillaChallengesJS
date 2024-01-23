@@ -28,16 +28,25 @@ function taxesCalcul(grossSalary) {
         let inssC = 0.11
         let licotaSalarioBrutoC = salarioBrutoDig * inssC
         let novoSalarioBrutoC = salarioBrutoDig - licotaSalarioBrutoC
-        return novoSalarioBrutoC.toFixed(2)
-        
-        
-
+        if (novoSalarioBrutoC >= 1903.99 && novoSalarioBrutoC <= 2826.65) {
+            let ird = 0.075
+            let salarioLiqD = novoSalarioBrutoC * ird
+            let salarioLiqDF = salarioLiqD - 142.80
+            let salarioLiquidoFinalD = novoSalarioBrutoC - salarioLiqDF
+            return `O salário liquido é: R$ ${salarioLiquidoFinalD.toFixed(2)}`
+        } else if(novoSalarioBrutoC >= 2826.66 && novoSalarioBrutoC <= 3751.05) {
+            let irc = 0.15
+            let salarioLiqC = novoSalarioBrutoC * irc
+            let salarioLiqCF = salarioLiqC - 354.80
+            let salarioLiquidoFinalC = novoSalarioBrutoC - salarioLiqCF
+            return `O salário liquido é: R$ ${salarioLiquidoFinalC.toFixed(2)}`  
+        }
     } else if (salarioBrutoDig > 5189.82) {
         let novoSalarioBrutoD = salarioBrutoDig - 570.88
-        return novoSalarioBrutoD
+        return novoSalarioBrutoD.toFixed(2)
     } 
 }
-console.log(taxesCalcul(2826.65))
+console.log(taxesCalcul(4200))
 
 
 module.exports = {
