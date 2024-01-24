@@ -1,22 +1,27 @@
 const array = [1, 2, 3, 4, 5, 6, 7, 8, 8, 9, 10];
-const string = 'Patrick'
 
 
 // Desafio 1
 // Escreva um código que imprima um por um de todos os elementos de um array.
 
 function printElements(array) {
-  for (let index = 0; index < array.length; index++) {
+  for (let index = 0; index < array.length; index += 1) {
     console.log(array[index])
   } 
 }
-printElements(array)
 
 // Desafio 2
 // Escreva um código que encontre o maior elemento de um array.
 
 function biggerNumber(array) {
-  
+  let maxValue = array[0]
+
+  for(let i = 1; i <array.length; i += 1) {
+    if(array[i] > maxValue) {
+      maxValue = array[i];
+    }
+  }
+  return maxValue 
 }
 
 
@@ -25,52 +30,58 @@ function biggerNumber(array) {
 // Caso o array tenha um tamanho menor que 3 imprima a mensagem: 'Tamanho do array inválido'
 
 function ignoreFirstAndLastElement(array) {
-  if (array.length <= 3) {
-    console.log('Tamanho do array inválido')
+  if(array.length >= 3) {
+    for (let index = 1; index < (array.length - 1); index += 1) {
+      console.log(array[index])
+    } 
   } else {
-    let arrayUltimoIndex = array.pop()
-    let arrayPrimeiroIndex = array.shift()
-    console.log(array)
+    console.log('Tamanho do array inválido')
   }
 }
-ignoreFirstAndLastElement(array)
+
 
 // Desafio 4
 // Escreva um código que inverta a ordem dos elementos de um array.
 
 function invertElementsArray(array) {
-  let tamanho = array.length
-  let esquerda = null
-  let direita = null
-  for (esquerda = 0, direita = tamanho - 1; esquerda < direita; esquerda +=1, direita -= 1) {
-    let temp = array[esquerda]
-    array[esquerda] = array[direita]
-    array[direita] = temp
-  }
-  console.log(array) 
-}
-invertElementsArray(array)
+  let novoArr = [];
 
+  for (let index = (array.length - 1); index >= 0; index -= 1) {
+    novoArr.push(array[index])
+  }
+  return novoArr
+}
 
 // Desafio 5
 //  Escreva um código que recebe uma string por parâmetro e imprima a sua versão invertida.
 
 function invertString(string) {
-  let nameInverter = string.split("").reverse().join("")
-  console.log(nameInverter)  
+  let nameInverter = '';
+  for (let index = (string.length - 1); index >= 0; index -= 1) {
+    nameInverter += string[index]
 }
-invertString(string)
+  return nameInverter 
+}
+
 
 // Desafio 6
 // Escreva um código que receba um array de números por parâmetro e retorne
 // o array com os elementos duplicados removidos.
 
 function noDuplicates(array) {
-  const set = new Set(array);
-  const arraySemDuplicados = Array.from(set);
-  console.log(arraySemDuplicados); 
+  const dupArray = [array[0]];
+  if (array.length === 0) {
+    return (array);
+  } else {
+    for(let index = 1; index < array.length; index += 1) {
+      if(!dupArray.includes(array[index])){
+        dupArray.push(array[index])
+      }
+  }
+  return (dupArray);
+  } 
 }
-noDuplicates(array)
+
 
 module.exports = {
   biggerNumber,
