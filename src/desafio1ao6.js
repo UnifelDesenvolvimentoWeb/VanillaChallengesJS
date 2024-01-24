@@ -12,15 +12,16 @@ function printElements(array) {
     console.log(array[index])
   } 
 }
-printElements(array)
+console.log(printElements(array))
 
 // Desafio 2
 // Escreva um código que encontre o maior elemento de um array.
 function biggerNumber(array) {
   maxValue = array.reduce(function(prev, current) {
-    return prev > current ? prev : current
-  }) 
-  console.log(maxValue)
+    return prev > current ? prev : current  
+  })
+  return maxValue 
+  
 }
 biggerNumber(array)
 
