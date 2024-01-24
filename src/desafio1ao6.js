@@ -1,6 +1,8 @@
 const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const arrayProp = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const name = 'Patrick'
+const arrayDupli = [3, 5, 5, 7, 9, 9, 1, 9, 2, 5, 7, 9, 2, 42, 12, 56, 87, 34, 23, 34]
+
 
 
 // Desafio 1
@@ -62,9 +64,12 @@ invertString(name)
 // Desafio 6
 // Escreva um código que receba um array de números por parâmetro e retorne
 // o array com os elementos duplicados removidos.
-function noDuplicates(array) {
-  
+function noDuplicates(arrayDupli) {
+  const set = new Set(arrayDupli);
+  const arraySemDuplicados = Array.from(set);
+  console.log(arraySemDuplicados); 
 }
+noDuplicates(arrayDupli)
 
 module.exports = {
   biggerNumber,
