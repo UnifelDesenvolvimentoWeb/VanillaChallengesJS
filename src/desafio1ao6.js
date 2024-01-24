@@ -1,4 +1,5 @@
 const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const arrayProp = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // Desafio 1
 // Escreva um código que imprima um por um de todos os elementos de um array.
@@ -22,9 +23,16 @@ biggerNumber(array)
 // Desafio 3
 // Escreva um código que imprima todos os elementos de um array, exceto o primeiro e o último.
 // Caso o array tenha um tamanho menor que 3 imprima a mensagem: 'Tamanho do array inválido'
-function ignoreFirstAndLastElement(array) {
-
+function ignoreFirstAndLastElement(arrayProp) {
+  if (arrayProp.length <= 3) {
+    console.log('Tamanho do array inválido')
+  } else {
+    let arrayUltimoIndex = arrayProp.pop()
+    let arrayPrimeiroIndex = arrayProp.shift()
+    console.log(arrayProp)
+  }
 }
+ignoreFirstAndLastElement(arrayProp)
 
 // Desafio 4
 // Escreva um código que inverta a ordem dos elementos de um array.
