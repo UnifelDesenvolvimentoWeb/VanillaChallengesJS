@@ -17,7 +17,7 @@ function biggerNumber(array) {
   let maxValue = array[0]
 
   for(let index = 1; index <array.length; index += 1) {
-    if(array[i] > maxValue) {
+    if(array[index] > maxValue) {
       maxValue = array[index];
     }
   }
