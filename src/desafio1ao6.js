@@ -1,5 +1,5 @@
 
-
+const array = [1,2,3];
 // Desafio 1
 // Escreva um código que imprima um por um de todos os elementos de um array.
 function printElements(array) {
@@ -13,10 +13,10 @@ function biggerNumber(array) {
   let maior = 0
   for(let i = 0; i < array.length; i++){
     if (array[i] > maior){
-      maior = array[i]
+      maior = i
     } 
   }
-  return maior
+  return array[maior]
 }
 
 // Desafio 3
@@ -29,6 +29,7 @@ function ignoreFirstAndLastElement(array) {
   for(let i = 1; i <= array.length-2; i++){
     console.log(array[i])
   }
+  return
 }
 
 // Desafio 4
@@ -48,9 +49,10 @@ function invertString(string) {
   for(let i = string.length-1; i > -1; i--){
     stringInverted += `${string[i]}`
   }
-  console.log(stringInverted.toUpperCase())
+  const result = stringInverted
+  return result
 }
-const array = [1, 2, 3, 3, 7, 2 , 4];
+invertString("racecar")
 // Desafio 6
 // Escreva um código que receba um array de números por parâmetro e retorne
 // o array com os elementos duplicados removidos.

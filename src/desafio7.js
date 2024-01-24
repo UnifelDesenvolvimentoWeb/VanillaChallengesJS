@@ -3,7 +3,12 @@ function taxesCalcul(grossSalary) {
     // Variaveis que vão receber os valores
     let DescINSS = 0
     let AliqInss = 0
+    let valorIR = 0
+    let AliqIR = 0
+    let parcelaIR = 0 
+    let descAliqIR = 0
     let salarioBase = 0
+    let salarioLiquido = 0
     // Quando o valor é acima de 5189.82 ele retorna o valor de DescINSS direto, eu n preciso calcular com a Funçao calcDescINSS para isso serve a condicional!
     if(grossSalary > 5189.82){
         verificarAliqINSS()
@@ -15,7 +20,10 @@ function taxesCalcul(grossSalary) {
         salarioBase = grossSalary - DescINSS
     }
 
-
+    verificarAliqIR(salarioBase)
+    calcDescAliqIR(salarioBase,AliqIR)
+    valorIR = descAliqIR - parcelaIR
+    salarioLiquido = salarioBase - valorIR
     // Função que vai verificar qual é a Aliquota do INSS em % perante ao Salario Bruto
     function verificarAliqINSS(grossSalary){
         if(grossSalary > 5189.82){
@@ -35,10 +43,31 @@ function taxesCalcul(grossSalary) {
     function calcDescINSS(grossSalary, AliqInss){
         DescINSS = grossSalary * AliqInss
     }
+     function verificarAliqIR(salarioBase){
+        if(salarioBase >=  4664.68){
+            AliqIR = 0.275
+            parcelaIR = 869.36
+        }
+        else if(salarioBase >= 3751.06){
+            AliqIR = 0.225
+            parcelaIR = 636.13
+        }
+        else if (salarioBase >= 2826.66){
+            AliqIR = 0.15
+            parcelaIR = 354.80
+        }
+        else if (salarioBase >= 1903.99){
+            AliqIR = 0.075
+            parcelaIR = 142.80
+        }
+    }
+    function calcDescAliqIR(salarioBase,AliqIR){
+        descAliqIR = salarioBase * AliqIR
+    }
     
-    console.log(salarioBase);
+    return salarioLiquido
 }
-taxesCalcul(3054)
+console.log(taxesCalcul(4200))
 
 module.exports = {
     taxesCalcul
