@@ -42,8 +42,16 @@ return maiorNumero;
 // Desafio 3
 // Escreva um código que imprima todos os elementos de um array, exceto o primeiro e o último.
 // Caso o array tenha um tamanho menor que 3 imprima a mensagem: 'Tamanho do array inválido'
-function ignoreFirstAndLastElement(array) {
-
+function ignoreFirstAndLastElement (ignore) {
+   
+        if (ignore.length >= 3) {
+          
+         for (let index = 1; index < ignore.length - 1; index++)
+         console.log(ignore[index]);
+        
+        } else {
+          console.log('Tamanho do array inválido');
+  }
 }
 
 // Desafio 4
