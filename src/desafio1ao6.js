@@ -16,7 +16,23 @@ printElements(arrayDeNumeros)
 // Escreva um código que encontre o maior elemento de um array.
 function biggerNumber(array) {
 
+if (array.length === 0) {
+  return undefined;
 }
+var maiorNumero = array[0];
+    
+    for (let index = 1; index < array.length; index += 1) {
+        if (array[index] > maiorNumero) {
+            maiorNumero = array[index]
+           } 
+    }
+        
+return maiorNumero;
+}
+ 
+//const numbers = [-1, 2, -3, 4, -5];
+//biggerNumber(numbers);
+
 
 // Desafio 3
 // Escreva um código que imprima todos os elementos de um array, exceto o primeiro e o último.
