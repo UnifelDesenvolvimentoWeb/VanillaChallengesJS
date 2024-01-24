@@ -16,9 +16,9 @@ function printElements(array) {
 function biggerNumber(array) {
   let maxValue = array[0]
 
-  for(let i = 1; i <array.length; i += 1) {
+  for(let index = 1; index <array.length; index += 1) {
     if(array[i] > maxValue) {
-      maxValue = array[i];
+      maxValue = array[index];
     }
   }
   return maxValue 
