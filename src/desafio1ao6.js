@@ -1,5 +1,7 @@
 const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const arrayProp = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const name = 'Patrick'
+
 
 // Desafio 1
 // Escreva um código que imprima um por um de todos os elementos de um array.
@@ -51,9 +53,11 @@ invertElementsArray(array)
 
 // Desafio 5
 //  Escreva um código que recebe uma string por parâmetro e imprima a sua versão invertida.
-function invertString(string) {
-
+function invertString(name) {
+  let nameInverter = name.split("").reverse().join("")
+  console.log(nameInverter)  
 }
+invertString(name)
 
 // Desafio 6
 // Escreva um código que receba um array de números por parâmetro e retorne
