@@ -11,17 +11,17 @@ printsElements(array);
 
 // Desafio 2
 // Escreva um código que encontre o maior elemento de um array.
-let maiorNum = array[0];
-
 function biggerNumber(array) {
+  let maiorNum = array[0]; // Initialize maiorNum with the first element of the array
   for (let index = 1; index < array.length; index ++) {
-    if (array[index] > maiorNum) {
-      maiorNum = array[index]
-    }
+     if (array[index] > maiorNum) {
+       maiorNum = array[index];
+     }
   }
   console.log(`O maior elemento do array é: ${maiorNum}`);
-}
-biggerNumber(array)
+  return maiorNum; 
+ }
+ biggerNumber(array)
 
 // Desafio 3
 // Escreva um código que imprima todos os elementos de um array, exceto o primeiro e o último.
