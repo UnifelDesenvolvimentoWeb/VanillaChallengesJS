@@ -89,8 +89,15 @@ function invertString(str) {
 // Escreva um código que receba um array de números por parâmetro e retorne
 // o array com os elementos duplicados removidos.
 function noDuplicates(array) {
+ 
+    if (!Array.isArray(array)) {
+      console.log("Informe um array válido.");
+      return;
+    }
   
+    return Array.from(new Set(array));
 }
+
 
 module.exports = {
   biggerNumber,
