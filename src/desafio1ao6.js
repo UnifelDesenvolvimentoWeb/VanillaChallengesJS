@@ -82,7 +82,15 @@ function invertString(string) {
 // Escreva um código que receba um array de números por parâmetro e retorne
 // o array com os elementos duplicados removidos.
 function noDuplicates(array) {
+  const Array = [];
   
+  for (let i = 0; i < array.length; i++) {
+    if (!Array.includes(array[i])) {
+      Array.push(array[i]);
+    }
+  }
+
+  return Array;
 }
 
 module.exports = {
