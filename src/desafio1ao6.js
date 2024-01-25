@@ -4,7 +4,7 @@ const array = [1, 2, 3, 4, 5, 6, 7, 8, 8, 9, 10];
 // Desafio 1
 // Escreva um código que imprima um por um de todos os elementos de um array.
 
-function printElements(array) {
+function printsElements(array) {
   for (let index = 0; index < array.length; index += 1) {
     console.log(array[index])
   } 
@@ -85,7 +85,7 @@ function noDuplicates(array) {
 
 module.exports = {
   biggerNumber,
-  printElements,
+  printsElements,
   ignoreFirstAndLastElement,
   invertElementsArray,
   invertString,
