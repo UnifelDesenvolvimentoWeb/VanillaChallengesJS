@@ -44,16 +44,22 @@ ignoreFirstAndLastElement(teste2)	*/
 
 // Desafio 4
 // Escreva um código que inverta a ordem dos elementos de um array.
-function invertElementsArray(array) {
+/*function invertElementsArray(array) {
 	for(let i = array.length; i>=0 ; i--){
 		console.log(array[i])		
 	}
 }
-invertElementsArray(array)
+invertElementsArray(array)*/
 
 // Desafio 5
 //  Escreva um código que recebe uma string por parâmetro e imprima a sua versão invertida.
-
+const frutas =["Abacate", "Cajú", "Manga", "Acerola", "Melância"] 
+function invertString(string) {
+	for(let i=string.length-1; i>=0;  i--){
+		console.log(string[i])
+	}
+}
+invertString(frutas)
 
 // Desafio 6
 // Escreva um código que receba um array de números por parâmetro e retorne
@@ -66,7 +72,7 @@ module.exports = {
  // biggerNumber,
  // printElements,
  // ignoreFirstAndLastElement,
-  invertElementsArray,
+  //invertElementsArray,
   invertString,
   noDuplicates
 }
