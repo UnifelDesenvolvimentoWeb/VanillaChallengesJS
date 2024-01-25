@@ -1,25 +1,40 @@
 // Desafio 8
-const telNumber = [7, 1, 9, 9, 1, 5, 0, 4, 8, 3, 4]
+
 function formatPhoneNumber(telNumber) {
-    let cel = telNumber.join("")
-    if ( cel.length <= 10) {
-        console.log('Array com tamanho incorreto.')
-    } else if (telNumber.some(it => it < 0)) {
-        console.log('não é possível gerar um número de telefone com esses valores')
-    } else if (telNumber.some(it => it > 10)) {
-        console.log('não é possível gerar um número de telefone com esses valores')
-    } else {
-        const phoneMask = (cel) => {
-            if (!cel) return ""
-            cel = cel.replace(/\D/g,'')
-            cel = cel.replace(/(\d{2})(\d)/,"($1) $2")
-            cel = cel.replace(/(\d)(\d{4})$/,"$1-$2")
-            return cel
+    let telNum = []
+    if(telNumber.length != 11) {
+        return 'Array com tamanho incorreto.'
+    }
+    for( let index = 0; index < telNumber.length; index += 1) {
+        if (telNumber[index] < 0) {
+            return "não é possível gerar um número de telefone com esses valores"
+        } else if (telNumber[index] >9) {
+            return "não é possível gerar um número de telefone com esses valores"
         }
-        console.log(phoneMask(cel))
-    } 
+        telNum.push(telNumber[index])
+    }
+
+    const order = telNumber
+    order.sort()
+    let num = null;
+    let cont = 0;
+
+    for (let index = 0; index <telNumber.length; index += 1) {
+        if (num === order[index]) {
+            cont += 1
+
+        if (cont === 3) {
+            return ("não é possível gerar um número de telefone com esses valores")
+        } 
+        } else {
+            cont = 1;
+            num = order[index];
+        }
+    }
+    return `(${telNum[0]}${telNum[1]}) ${telNum[2]}${telNum[3]}${telNum[4]}${telNum[5]}${telNum[6]}-${telNum[7]}${telNum[8]}${telNum[9]}${telNum[10]}`
+    
 }
-formatPhoneNumber(telNumber)
+
 module.exports = {
     formatPhoneNumber
 }
