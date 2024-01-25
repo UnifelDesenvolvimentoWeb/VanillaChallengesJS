@@ -29,7 +29,7 @@ console.log(maiorNumero)*/
 // Desafio 3
 // Escreva um código que imprima todos os elementos de um array, exceto o primeiro e o último.
 // Caso o array tenha um tamanho menor que 3 imprima a mensagem: 'Tamanho do array inválido'
-function ignoreFirstAndLastElement(array) {
+/*function ignoreFirstAndLastElement(array) {
 	for(let i=0; i<array.length; i++) {
 		if(i > 0 && i < array.length-1) {
 			console.log(array[i])
@@ -40,19 +40,20 @@ function ignoreFirstAndLastElement(array) {
 }
 ignoreFirstAndLastElement(teste)
 console.log("========================")
-ignoreFirstAndLastElement(teste2)	
+ignoreFirstAndLastElement(teste2)	*/
 
 // Desafio 4
 // Escreva um código que inverta a ordem dos elementos de um array.
 function invertElementsArray(array) {
-
+	for(let i = array.length; i>=0 ; i--){
+		console.log(array[i])		
+	}
 }
+invertElementsArray(array)
 
 // Desafio 5
 //  Escreva um código que recebe uma string por parâmetro e imprima a sua versão invertida.
-function invertString(string) {
 
-}
 
 // Desafio 6
 // Escreva um código que receba um array de números por parâmetro e retorne
@@ -64,7 +65,7 @@ function noDuplicates(array) {
 module.exports = {
  // biggerNumber,
  // printElements,
-  ignoreFirstAndLastElement,
+ // ignoreFirstAndLastElement,
   invertElementsArray,
   invertString,
   noDuplicates
