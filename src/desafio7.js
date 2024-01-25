@@ -73,7 +73,7 @@ function taxesCalcul(grossSalary) {
         descAliqIR = salarioBase * AliqIR
     }
     
-    return "Salário: R$ "+salarioLiquido
+    return `Salário: R$ ${salarioLiquido}`
 }
 console.log(taxesCalcul(0))
 
