@@ -74,9 +74,16 @@ function invertElementsArray(array) {
 
 // Desafio 5
 //  Escreva um código que recebe uma string por parâmetro e imprima a sua versão invertida.
-function invertString(string) {
-
+function invertString(str) {
+   
+    if (typeof str !== 'string') {
+      console.log("Por favor, forneça uma string válida.");
+      return;
+    }
+  
+    return str.split('').reverse().join('');
 }
+
 
 // Desafio 6
 // Escreva um código que receba um array de números por parâmetro e retorne
