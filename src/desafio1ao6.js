@@ -28,6 +28,7 @@ function biggerNumber(array) {
 // Desafio 3
 // Escreva um código que imprima todos os elementos de um array, exceto o primeiro e o último.
 // Caso o array tenha um tamanho menor que 3 imprima a mensagem: 'Tamanho do array inválido'
+<<<<<<< Updated upstream
 
 function ignoreFirstAndLastElement(array) {
   if(array.length >= 3) {
@@ -39,6 +40,18 @@ function ignoreFirstAndLastElement(array) {
   }
 }
 
+=======
+function ignoreFirstAndLastElement(array) {
+  if (array.length <= 3) {
+    console.log('Tamanho do array inválido')
+  } else {
+    let arrayUltimoIndex = array.pop()
+    let arrayPrimeiroIndex = array.shift()
+    console.log(array)
+  }
+}
+ignoreFirstAndLastElement(array)
+>>>>>>> Stashed changes
 
 // Desafio 4
 // Escreva um código que inverta a ordem dos elementos de um array.
