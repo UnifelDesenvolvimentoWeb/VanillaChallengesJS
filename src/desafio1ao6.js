@@ -17,7 +17,15 @@ function printsElements(array) {
 
 function biggerNumber(array) {
   
-    
+  let maiorElemento = array[0];
+  
+    for (let i = 1; i < array.length; i++) {
+      if (array[i] > maiorElemento) {
+        maiorElemento = array[i];
+      }
+    }
+  
+    return maiorElemento;
     
   }
   
