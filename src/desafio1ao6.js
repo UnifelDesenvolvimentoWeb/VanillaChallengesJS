@@ -1,5 +1,5 @@
 const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
+/*
 // Desafio 1
 // Escreva um código que imprima um por um de todos os elementos de um array.
 function printElements(array) {
@@ -10,10 +10,19 @@ function printElements(array) {
 	printElements(array);
 
 // Desafio 2
-// Escreva um código que encontre o maior elemento de um array.
-function biggerNumber(array) {
+// Escreva um código que encontre o maior elemento de um array.*/
+let maiorNumero = 0;
 
+function biggerNumber(array) {
+	for(let i = 0; i<10 ; i++){
+		if (maiorNumero < array[i]) {
+			maiorNumero = array[i]			
+		}		
+	}	
 }
+biggerNumber(array)
+console.log(maiorNumero)
+
 
 // Desafio 3
 // Escreva um código que imprima todos os elementos de um array, exceto o primeiro e o último.
@@ -43,7 +52,7 @@ function noDuplicates(array) {
 
 module.exports = {
   biggerNumber,
-  printElements,
+ // printElements,
   ignoreFirstAndLastElement,
   invertElementsArray,
   invertString,
