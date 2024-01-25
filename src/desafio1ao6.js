@@ -28,16 +28,15 @@ function biggerNumber(array) {
 // Caso o array tenha um tamanho menor que 3 imprima a mensagem: 'Tamanho do array inválido'
 function ignoreFirstAndLastElement(array) {
   if (array.length < 3) {
-    console.log('Tamanho do array inválido');
+     console.log('Tamanho do array inválido');
   } else {
-    array.shift()
-    array.pop()
-
-    console.log(array);
+     array.shift();
+     array.pop();
+     array.forEach(element => console.log(element));
   }
-}
-ignoreFirstAndLastElement(array)
-
+ }
+ ignoreFirstAndLastElement(array);
+ 
 // Desafio 4
 // Escreva um código que inverta a ordem dos elementos de um array.
 function invertElementsArray(array) {
@@ -55,7 +54,7 @@ function invertString(string) {
  }
  const minhaString = 'Dias';
  invertString(minhaString);
- 
+
 // Desafio 6
 // Escreva um código que receba um array de números por parâmetro e retorne
 // o array com os elementos duplicados removidos.
@@ -66,7 +65,7 @@ function noDuplicates(array) {
   return unicoArray;
 }
 const resultArray = noDuplicates(arrayDuplicado);
-console.log(`Array com os elementos duplicados removidos: ${resultArray}`);
+console.log(`Array com os elementos duplicados removidos:`, resultArray);
 
 noDuplicates(array)
 module.exports = {
