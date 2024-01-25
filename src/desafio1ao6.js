@@ -40,18 +40,6 @@ function ignoreFirstAndLastElement(array) {
   }
 }
 
-=======
-function ignoreFirstAndLastElement(array) {
-  if (array.length <= 3) {
-    console.log('Tamanho do array inválido')
-  } else {
-    let arrayUltimoIndex = array.pop()
-    let arrayPrimeiroIndex = array.shift()
-    console.log(array)
-  }
-}
-ignoreFirstAndLastElement(array)
->>>>>>> Stashed changes
 
 // Desafio 4
 // Escreva um código que inverta a ordem dos elementos de um array.
