@@ -1,7 +1,7 @@
 const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const teste = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
 const teste2 = [10, 20]
-/*
+
 // Desafio 1
 // Escreva um código que imprima um por um de todos os elementos de um array.
 function printElements(array) {
@@ -12,9 +12,9 @@ function printElements(array) {
 	printElements(array);
 
 // Desafio 2
-// Escreva um código que encontre o maior elemento de um array.*/
+// Escreva um código que encontre o maior elemento de um array.
 
-/*let maiorNumero = 0;
+let maiorNumero = 0;
 function biggerNumber(array) {
 	for(let i = 0; i<array.length ; i++){
 		if (maiorNumero < array[i]) {
@@ -23,13 +23,13 @@ function biggerNumber(array) {
 	}	
 }
 biggerNumber(teste)
-console.log(maiorNumero)*/
+console.log(maiorNumero)
 
 
 // Desafio 3
 // Escreva um código que imprima todos os elementos de um array, exceto o primeiro e o último.
 // Caso o array tenha um tamanho menor que 3 imprima a mensagem: 'Tamanho do array inválido'
-/*function ignoreFirstAndLastElement(array) {
+function ignoreFirstAndLastElement(array) {
 	for(let i=0; i<array.length; i++) {
 		if(i > 0 && i < array.length-1) {
 			console.log(array[i])
@@ -40,16 +40,16 @@ console.log(maiorNumero)*/
 }
 ignoreFirstAndLastElement(teste)
 console.log("========================")
-ignoreFirstAndLastElement(teste2)	*/
+ignoreFirstAndLastElement(teste2)	
 
 // Desafio 4
 // Escreva um código que inverta a ordem dos elementos de um array.
-/*function invertElementsArray(array) {
-	for(let i = array.length; i>=0 ; i--){
+function invertElementsArray(array) {
+	for(let i = array.length-1; i>=0 ; i--){
 		console.log(array[i])		
 	}
 }
-invertElementsArray(array)*/
+invertElementsArray(array)
 
 // Desafio 5
 //  Escreva um código que recebe uma string por parâmetro e imprima a sua versão invertida.
@@ -68,11 +68,13 @@ function noDuplicates(array) {
   
 }
 
+console.log("Testando o Git")
+
 module.exports = {
- // biggerNumber,
- // printElements,
- // ignoreFirstAndLastElement,
-  //invertElementsArray,
+  biggerNumber,
+  printElements,
+  ignoreFirstAndLastElement,
+  invertElementsArray,
   invertString,
   noDuplicates
 }
