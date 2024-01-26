@@ -12,7 +12,7 @@ printsElements(array);
 // Desafio 2
 // Escreva um código que encontre o maior elemento de um array.
 function biggerNumber(array) {
-  let maiorNum = array[0]; // Initialize maiorNum with the first element of the array
+  let maiorNum = array[0]; 
   for (let index = 1; index < array.length; index ++) {
      if (array[index] > maiorNum) {
        maiorNum = array[index];
