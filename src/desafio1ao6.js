@@ -2,12 +2,11 @@ const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // Desafio 1
 // Escreva um código que imprima um por um de todos os elementos de um array.
-function printElements(numeros) {
+function printsElements(numeros) {
 
   if (!numeros || numeros.length === 0) {
     console.log("Array inválido ou vazio");
-    return;
-  }
+    }
 
   for (let index = 0; index < numeros.length; index++) {
     console.log(numeros[index]);
@@ -101,7 +100,7 @@ function noDuplicates(array) {
 
 module.exports = {
   biggerNumber,
-  printElements,
+  printsElements,
   ignoreFirstAndLastElement,
   invertElementsArray,
   invertString,
