@@ -1,11 +1,15 @@
 const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const teste = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+const teste2 = [10, 20]
 
 // Desafio 1
 // Escreva um código que imprima um por um de todos os elementos de um array.
 function printElements(array) {
-
+	for(let i = 0; i<array.length; i++){
+		console.log(array[i]);
+	}
 }
-
+printElements(array);
 // Desafio 2
 // Escreva um código que encontre o maior elemento de um array.
 function biggerNumber(array) {
