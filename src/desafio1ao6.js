@@ -67,8 +67,7 @@ invertString(frutas)
 function noDuplicates(array) {
   
 }
-
-console.log("Testando o Git")
+console.log("Refatora projeto")
 
 module.exports = {
   biggerNumber,
