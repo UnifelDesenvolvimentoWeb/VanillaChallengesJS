@@ -50,12 +50,17 @@ function invertElementsArray(array) {
 	}
 }
 invertElementsArray(array)
+console.log("========================")
 
 // Desafio 5
 //  Escreva um código que recebe uma string por parâmetro e imprima a sua versão invertida.
+const frutas =["Abacate", "Cajú", "Manga", "Acerola", "Melância"] 
 function invertString(string) {
-
+	for(let i=string.length-1; i>=0;  i--){
+		console.log(string[i])
+	}
 }
+invertString(frutas)
 
 // Desafio 6
 // Escreva um código que receba um array de números por parâmetro e retorne
