@@ -1,5 +1,5 @@
 const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const teste = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+const teste = [10, 20, 30, 40, 50, 30, 70, 30, 90, 10];
 const teste2 = [10, 20]
 
 // Desafio 1
@@ -61,13 +61,16 @@ function invertString(string) {
 	}
 }
 invertString(frutas)
-
+console.log("========================")
 // Desafio 6
 // Escreva um código que receba um array de números por parâmetro e retorne
 // o array com os elementos duplicados removidos.
-function noDuplicates(array) {
-  
+function noDuplicates(array){	
+	let novoArray = array.filter((item, i) => array.indexOf(item) === i);	
+	console.log(novoArray);
 }
+
+noDuplicates(teste);
 
 module.exports = {
   biggerNumber,
