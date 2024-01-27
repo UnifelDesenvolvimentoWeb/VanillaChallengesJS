@@ -43,10 +43,6 @@ function taxesCalcul ( salarioBruto )
     return 'Salário: R$ ' + salarioLiquido;
 }
 
-console.log( taxesCalcul( 3000 ) );   // Salário: R$ 2612.55
-console.log( taxesCalcul( 2000 ) );   // Salário: R$ 1820.00
-console.log( taxesCalcul( 4200 ) );   // Salário: R$ 3532.10
-
 module.exports = {
     taxesCalcul
 }
