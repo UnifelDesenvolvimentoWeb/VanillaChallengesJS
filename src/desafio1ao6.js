@@ -23,13 +23,23 @@ function biggerNumber(array) {
 console.log("===================")
 biggerNumber(array)
 console.log("Maior Número é: " + maiorNumero)
+console.log("===================")
 
 // Desafio 3
 // Escreva um código que imprima todos os elementos de um array, exceto o primeiro e o último.
 // Caso o array tenha um tamanho menor que 3 imprima a mensagem: 'Tamanho do array inválido'
 function ignoreFirstAndLastElement(array) {
-
+	for(let i=0; i<array.length; i++) {
+		if(i > 0 && i < array.length-1) {
+			console.log(array[i])
+		}else if(array.length < 3 && i > 0) {
+			console.log("Tamnho do array inválido")
+		}
+	}		
 }
+ignoreFirstAndLastElement(array)
+console.log("========================")
+ignoreFirstAndLastElement(teste2)
 
 // Desafio 4
 // Escreva um código que inverta a ordem dos elementos de um array.
