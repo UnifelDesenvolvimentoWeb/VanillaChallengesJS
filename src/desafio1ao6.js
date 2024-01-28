@@ -39,16 +39,23 @@ function invertElementsArray(array){
   return invertArray
 }
 
+
+
 // Desafio 5
 //  Escreva um código que recebe uma string por parâmetro e imprima a sua versão invertida.
 function invertString(str){
-  console.log(str.split("").reverse().join(""))
+  return str.split("").reverse().join('')
 }
+
+
 
 // Desafio 6
 // Escreva um código que receba um array de números por parâmetro e retorne
 // o array com os elementos duplicados removidos.
 function noDuplicates(array) {
+  const set = new Set(array);
+  const semDuplicados = Array.from(set);
+  return semDuplicados
   
 }
 
