@@ -12,8 +12,9 @@ printsElements(array);
 // Desafio 2
 // Escreva um código que encontre o maior elemento de um array.
 function biggerNumber(array) {
-
+  
 }
+
 
 
 
