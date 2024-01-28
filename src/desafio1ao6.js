@@ -12,7 +12,24 @@ printsElements(array);
 // Desafio 2
 // Escreva um código que encontre o maior elemento de um array.
 function biggerNumber(array) {
+  if (array.length === 0) {
+    return -1;
+  }
+  let maiorNumero = array[0];
+  for (let i = 1; i < array.length; i++){
+    if (array[i] > maiorNumero) {
+      maiorNumero=array[i];
+    }
+  }
 
+  return maiorNumero = array;
+}
+
+const resultado = biggerNumber(array);
+if (resultado === -1) {
+  console.log("O array está vazio.");
+} else {
+  console.log("O maior número é:", resultado);
 }
 
 // Desafio 3
