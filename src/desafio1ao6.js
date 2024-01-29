@@ -63,7 +63,11 @@ return invertedArray;
 }
 
 const invertedArray =
-invertedArray(array);
+invertElementsArray(array);
+
+console.log("Array original:", array);
+console.log("Array invertido:", invertedArray);
+
 // Desafio 5
 //  Escreva um código que recebe uma string por parâmetro e imprima a sua versão invertida.
 function invertString(string) {
