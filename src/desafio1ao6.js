@@ -13,11 +13,11 @@ printsElements(array);
 // Escreva um código que encontre o maior elemento de um array.
 function biggerNumber(array) {
   if (array.length === 0){
-    return null ;
+    return inválido ;
   }
   let maxNumero = array[0];
 
-  for (let i = 1; i  < array.length ; i++) {
+  for (let i = 1; i  < array.length; i++) {
    if (array[i] > maxNumero) {
     maxNumero = array[i];
    }
