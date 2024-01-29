@@ -87,8 +87,21 @@ console.log ("invertido :",invertedString);
 // Escreva um código que receba um array de números por parâmetro e retorne
 // o array com os elementos duplicados removidos.
 function noDuplicates(array) {
-  
+  const uniqueArray = [];
+
+  for (let i = 0; i < array.length; i++) {
+    if (uniqueArray.indexOf(array[i]) === -1) {
+      uniqueArray.push(array[i]);
+    }
+  }
+
+  return uniqueArray;
 }
+
+const inputArray =[1,2,3,4,5,6,7,8,,9,10];
+const resultArray =noDuplicates(inputArray);
+
+console.log(resultArray);
 
 module.exports = {
   biggerNumber,
