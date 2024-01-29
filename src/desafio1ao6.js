@@ -71,8 +71,17 @@ console.log("Array invertido:", invertedArray);
 // Desafio 5
 //  Escreva um código que recebe uma string por parâmetro e imprima a sua versão invertida.
 function invertString(string) {
+  const array = string.split("");
+  const invertedString = array.reverse();
+  return invertedString.join("");
 
 }
+
+const originalString = "1,2,3,4,5,6,7,8,9,10";
+const invertedString = invertString(originalString);
+
+console.log ("Original :", originalString);
+console.log ("invertido :",invertedString);
 
 // Desafio 6
 // Escreva um código que receba um array de números por parâmetro e retorne
