@@ -2,11 +2,12 @@
 const array = [1,2,3];
 // Desafio 1
 // Escreva um código que imprima um por um de todos os elementos de um array.
-function printElements(array) {
+function printsElements(array) {
   for(let i = 0; i < array.length; i++){
     console.log(array[i])
   }
 }
+
 // Desafio 2
 // Escreva um código que encontre o maior elemento de um array.
 function biggerNumber(array) {
@@ -24,7 +25,7 @@ function biggerNumber(array) {
 // Caso o array tenha um tamanho menor que 3 imprima a mensagem: 'Tamanho do array inválido'
 function ignoreFirstAndLastElement(array) {
   if(array.length < 3){
-    console.log('Tamanho do Array inválido');
+    console.log('Tamanho do array inválido');
   }
   for(let i = 1; i <= array.length-2; i++){
     console.log(array[i])
@@ -52,7 +53,7 @@ function invertString(string) {
   const result = stringInverted
   return result
 }
-invertString("racecar")
+
 // Desafio 6
 // Escreva um código que receba um array de números por parâmetro e retorne
 // o array com os elementos duplicados removidos.
@@ -77,7 +78,7 @@ function noDuplicates(array) {
 
 module.exports = {
   biggerNumber,
-  printElements,
+  printsElements,
   ignoreFirstAndLastElement,
   invertElementsArray,
   invertString,
