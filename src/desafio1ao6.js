@@ -21,46 +21,57 @@ function biggerNumber(array) {
     var numero = array[i];
     if (numero > maiornumero) {
       maiornumero = numero;
-  
+
     }
 
   }
   return (`o maior número encontrado na array é: ${maiornumero}`)
 }
+console.log(biggerNumber(array));
 
-console.log (biggerNumber(array));
 
 // Desafio 3
 // Escreva um código que imprima todos os elementos de um array, exceto o primeiro e o último.
 // Caso o array tenha um tamanho menor que 3 imprima a mensagem: 'Tamanho do array inválido'
 function ignoreFirstAndLastElement(array) {
+  
+ if (array.length > 3) {
+      array.pop();
+      array.shift();
+     console.log(array);
+    } else {
+     
+      console.log('tamanho de array invalido')
+    }
+  }
 
-}
+  
+  console.log(ignoreFirstAndLastElement(array));
 
-// Desafio 4
-// Escreva um código que inverta a ordem dos elementos de um array.
-function invertElementsArray(array) {
+  // Desafio 4
+  // Escreva um código que inverta a ordem dos elementos de um array.
+  function invertElementsArray(array) {
 
-}
+  }
 
-// Desafio 5
-//  Escreva um código que recebe uma string por parâmetro e imprima a sua versão invertida.
-function invertString(string) {
+  // Desafio 5
+  //  Escreva um código que recebe uma string por parâmetro e imprima a sua versão invertida.
+  function invertString(string) {
 
-}
+  }
 
-// Desafio 6
-// Escreva um código que receba um array de números por parâmetro e retorne
-// o array com os elementos duplicados removidos.
-function noDuplicates(array) {
+  // Desafio 6
+  // Escreva um código que receba um array de números por parâmetro e retorne
+  // o array com os elementos duplicados removidos.
+  function noDuplicates(array) {
 
-}
+  }
 
-module.exports = {
-  biggerNumber,
-  printElements,
-  ignoreFirstAndLastElement,
-  invertElementsArray,
-  invertString,
-  noDuplicates
-}
+  module.exports = {
+    biggerNumber,
+    printElements,
+    ignoreFirstAndLastElement,
+    invertElementsArray,
+    invertString,
+    noDuplicates
+  }
