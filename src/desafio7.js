@@ -35,7 +35,7 @@ function taxesCalcul(grossSalary) {
     netSalary = baseSalary - ir;
     
     return `Salário: R$ ${netSalary.toString()}`;
-}
+} console.log(taxesCalcul(1200))
 
 module.exports = {
     taxesCalcul
