@@ -36,8 +36,8 @@ if (array.length < 3) {
 // Desafio 4
 // Escreva um código que inverta a ordem dos elementos de um array.
 function invertElementsArray(array) {
-
-}
+  return array.slice().reverse();
+} console.log(invertElementsArray(array))
 
 // Desafio 5
 //  Escreva um código que recebe uma string por parâmetro e imprima a sua versão invertida.
