@@ -24,7 +24,13 @@ function biggerNumber(array) {
 // Escreva um código que imprima todos os elementos de um array, exceto o primeiro e o último.
 // Caso o array tenha um tamanho menor que 3 imprima a mensagem: 'Tamanho do array inválido'
 function ignoreFirstAndLastElement(array) {
-
+if (array.length < 3) {
+  console.log("Tamanho do array inválido")
+  return;
+}
+  for (let index = 1; index < array.length - 1; index++) {
+    console.log(array[index]); 
+}
 }
 
 // Desafio 4
