@@ -2,9 +2,9 @@ const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // Desafio 1
 // Escreva um código que imprima um por um de todos os elementos de um array.
-function printElements(array) { 
-  for ( let index = 0 ; index <= array.length ; index+=1){
-    console.log (`numero de repetição: ${array[index]}` );
+function printElements(array) {
+  for (let index = 0; index <= array.length; index += 1) {
+    console.log(`numero de repetição: ${array[index]}`);
   }
 }
 
@@ -16,8 +16,19 @@ console.log(printElements(array));
 // Desafio 2
 // Escreva um código que encontre o maior elemento de um array.
 function biggerNumber(array) {
+  var maiornumero = 0;
+  for (i = 0; i < array.length; i++) {
+    var numero = array[i];
+    if (numero > maiornumero) {
+      maiornumero = numero;
+  
+    }
 
+  }
+  return (`o maior número encontrado na array é: ${maiornumero}`)
 }
+
+console.log (biggerNumber(array));
 
 // Desafio 3
 // Escreva um código que imprima todos os elementos de um array, exceto o primeiro e o último.
@@ -42,7 +53,7 @@ function invertString(string) {
 // Escreva um código que receba um array de números por parâmetro e retorne
 // o array com os elementos duplicados removidos.
 function noDuplicates(array) {
-  
+
 }
 
 module.exports = {
