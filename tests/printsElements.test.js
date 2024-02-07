@@ -16,7 +16,8 @@ describe('1 - printsElements', () => {
         consoleSpy.mockRestore();
     });
 
-    // works with arrays of any length
+    // works with arrays of any length meu projeto
+    
     it('should work with arrays of any length when called with a valid array', () => {
         const array = [10, 5, 9, 26, 8];
         const consoleSpy = jest.spyOn(console, 'log');
