@@ -1,12 +1,12 @@
-const { printsElements } = require('../src/desafio1ao6');
+const { printElements } = require('../src/desafio1ao6');
 
-describe('1 - printsElements', () => {
+describe('1 - printElements', () => {
     // prints all elements of the array
     it('should print all elements of the array when called with a valid array', () => {
         const array = [1, 2, 3];
         const consoleSpy = jest.spyOn(console, 'log');
 
-        printsElements(array);
+        printElements(array);
 
         expect(consoleSpy).toHaveBeenCalledTimes(3);
         expect(consoleSpy).toHaveBeenNthCalledWith(1, 1);
@@ -21,7 +21,7 @@ describe('1 - printsElements', () => {
         const array = [10, 5, 9, 26, 8];
         const consoleSpy = jest.spyOn(console, 'log');
     
-        printsElements(array);
+        printElements(array);
     
         expect(consoleSpy).toHaveBeenCalledTimes(5);
         expect(consoleSpy).toHaveBeenNthCalledWith(1, 10);
@@ -38,7 +38,7 @@ describe('1 - printsElements', () => {
         const array = [1];
         const consoleSpy = jest.spyOn(console, 'log');
     
-        printsElements(array);
+        printElements(array);
     
         expect(consoleSpy).toHaveBeenCalledTimes(1);
         expect(consoleSpy).toHaveBeenNthCalledWith(1, 1);
@@ -50,7 +50,7 @@ describe('1 - printsElements', () => {
         const array = [null, undefined];
         const consoleSpy = jest.spyOn(console, 'log');
     
-        printsElements(array);
+        printElements(array);
     
         expect(consoleSpy).toHaveBeenCalledTimes(2);
         expect(consoleSpy).toHaveBeenNthCalledWith(1, null);
