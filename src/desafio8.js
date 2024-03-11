@@ -2,7 +2,6 @@
 function formatPhoneNumber(telNumber) {
     let resultFrequency = {}
     let resultMaior9Menor0 = 0
-    let result
     const getFrequency = (array, value) => 
         array.reduce((acc, item) => value === item ? acc + 1 : acc, 0)
     
