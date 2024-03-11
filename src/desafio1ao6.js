@@ -2,24 +2,24 @@ const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // Desafio 1
 // Escreva um código que imprima um por um de todos os elementos de um array.
-//function printElements(array) {
-//  for (let index = 0; index < array.lenght; index += 1) {
-//    return array[index]
-//  }
-//}
-
-const printElements = (array) => {
-  for (let index = 0; index < array.lenght; index += 1) {
+function printElements(array) {
+  for (let index = 0; index > array.lenght; index += 1) {
     console.log(array[index])
   }
 }
-console.log(printElements(array))
+
+//const printElements = (array) => {
+//  for (let index = 0; index < array.lenght; index += 1) {
+//    console.log(array[index])
+//  }
+//}
+printElements(array)
 
 // Desafio 2
 // Escreva um código que encontre o maior elemento de um array.
 function biggerNumber(array) {
-  let maior = array.lenght -  1
-  return array[maior]
+  let maior = array.lenght
+  return array[maior - 1]
 }
 console.log(biggerNumber(array))
 
@@ -27,7 +27,8 @@ console.log(biggerNumber(array))
 // Escreva um código que imprima todos os elementos de um array, exceto o primeiro e o último.
 // Caso o array tenha um tamanho menor que 3 imprima a mensagem: 'Tamanho do array inválido'
 function ignoreFirstAndLastElement(array) {
-
+  let num = 
+  console.log(array)
 }
 
 // Desafio 4
