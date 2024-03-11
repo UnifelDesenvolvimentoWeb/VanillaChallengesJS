@@ -2,15 +2,13 @@
 function formatPhoneNumber(telNumber) {
     let resultFrequency = {}
     let resultMaior9Menor0 = 0
+    let result
     const getFrequency = (array, value) => 
         array.reduce((acc, item) => value === item ? acc + 1 : acc, 0)
     
     if (telNumber.length !== 11) {
         return 'Array com tamanho incorreto.'
     } else {
-        for (let i = 0; i < telNumber.length; i++) {
-            resultFrequency[i] = 0
-        }
         for (let i = 0; i < telNumber.length; i++) {
             resultFrequency[i] = getFrequency(telNumber, telNumber[i])
             if (telNumber[i] < 0 || telNumber[i] > 9) {
