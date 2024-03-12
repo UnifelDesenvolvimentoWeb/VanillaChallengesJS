@@ -2,20 +2,12 @@ const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // Desafio 1
 // Escreva um código que imprima um por um de todos os elementos de um array.
-let elements = 0
 function printElements(array) {
-  for (let index = 0; index > array.lenght; index += 1) {
-    elements += array[index]
-    console.log(elements)
+  for (let index = 0; index <= array.lenght; index += 1) {
+    console.log(`O elemento ${index} é ${array[index]}.`)
   }
 }
-
-//const printElements = (array) => {
-//  for (let index = 0; index < array.lenght; index += 1) {
-//    console.log(array[index])
-//  }
-//}
-printElements(array)
+console.log(printElements(array))
 
 // Desafio 2
 // Escreva um código que encontre o maior elemento de um array.
@@ -36,13 +28,16 @@ function ignoreFirstAndLastElement(array) {
 // Desafio 4
 // Escreva um código que inverta a ordem dos elementos de um array.
 function invertElementsArray(array) {
-
+  for (let index = array.lenght; index >= 0; index -= 1) {
+    console.log(array[index])
+  }
 }
+console.log(invertElementsArray(array))
 
 // Desafio 5
 //  Escreva um código que recebe uma string por parâmetro e imprima a sua versão invertida.
 function invertString(string) {
-
+  
 }
 
 // Desafio 6
