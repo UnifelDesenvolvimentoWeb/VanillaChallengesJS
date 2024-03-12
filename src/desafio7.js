@@ -44,7 +44,7 @@ function taxesCalcul(grossSalary) {
 
 
 }
-console.log("Salário: R$ " + taxesCalcul(4200));
+
 
 module.exports = {
     taxesCalcul
