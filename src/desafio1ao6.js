@@ -44,8 +44,13 @@ function ignoreFirstAndLastElement(array) {
 // Desafio 4
 // Escreva um código que inverta a ordem dos elementos de um array.
 function invertElementsArray(array) {
-
+    for ( let index = 0 ; index < array.length ; index += 1) {
+        arrayinvert.unshift ( array[index])
+    }
+    console.log(arrayinvert)
 }
+
+
 
 // Desafio 5
 //  Escreva um código que recebe uma string por parâmetro e imprima a sua versão invertida.
