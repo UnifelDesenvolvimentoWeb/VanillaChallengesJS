@@ -29,7 +29,17 @@ function biggerNumber(array) {
 // Caso o array tenha um tamanho menor que 3 imprima a mensagem: 'Tamanho do array inválido'
 function ignoreFirstAndLastElement(array) {
 
+    if ( array.length < 3 ) {
+        console.log ("Tamanho do array inválido");
+    } 
+    else {
+       for ( let index = 1 ; index < array.length - 1 ; index += 1){
+             console.log(array[index])
+       }
+         }
 }
+   
+
 
 // Desafio 4
 // Escreva um código que inverta a ordem dos elementos de um array.
